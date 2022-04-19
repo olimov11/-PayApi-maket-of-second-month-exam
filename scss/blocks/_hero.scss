@@ -1,0 +1,174 @@
+.hero__container {
+   padding-top: 112px;
+   padding-bottom: 150px;
+   padding-left: 165px;
+   padding-right: 165px;
+   display: flex;
+   background-image: url(/img/iPhone-X.svg);
+   background-repeat: no-repeat;
+   background-position: top calc(-30px) right calc(100px);
+
+   &__title {
+      width: 546px;
+      margin-bottom: 21px;
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 72px;
+      color: $san-blue;
+      margin-bottom: 40px;
+   }
+
+   &__form {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 16px;
+
+      &__btn {
+         position: absolute;
+         z-index: 1;
+         left: 273px;
+      }
+   }
+
+   &__input {
+      width: 445px;
+      padding: 15px 27px;
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+      border-radius: 24px;
+      background-color: $link-white;
+      border: none;
+
+
+      &:hover {
+         cursor: pointer;
+      }
+
+      &:active {
+         border: none;
+         cursor: progress;
+         transition: 2s;
+      }
+   }
+
+   &__btn {
+      margin-left: 27px;
+      border: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: $light-san-blue;
+      background-color: $bgk-color;
+      transition: 1s;
+
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+
+   &__phone {
+      width: 218px;
+      height: 87px;
+      margin-left: 245px;
+      margin-top: 70px;
+      padding: 15px;
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+      border-radius: 5px;
+      background-color: $link-white;
+
+
+      &__span {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 3px;
+
+         &__name {
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            color: $dark-prink;
+         }
+
+         &__time {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: $san-blue;
+            opacity: 0.5;
+         }
+      }
+
+      &__text {
+         font-weight: 400;
+         font-size: 10px;
+         line-height: 14px;
+         color: $san-blue;
+      }
+   }
+
+   @media only screen and (max-width:768px) {
+      flex-direction: column;
+      background-image: url(/img/768px-hero-bgck.svg);
+      background-position: top calc(-55px) right calc(50% - 2px);
+
+
+      &__title {
+         width: 573px;
+         margin-top: 230px;
+         font-family: 'DM Serif Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 56px;
+         letter-spacing: -0.369231px;
+      }
+
+      &__phone {
+         display: none;
+      }
+
+      &__form__btn {
+         width: 173px;
+         padding: 15px 24px;
+         top: 0;
+         left: 273px;
+      }
+   }
+
+   @media only screen and (max-width:375px) {
+      padding-left: 24px;
+      padding-right: 24px;
+      flex-direction: column;
+      background-image: url(/img/375px-bgck-hero.svg);
+      background-position: top -50px left 68px;
+
+      &__title {
+         margin-top: 150px;
+         width: 327px;
+         font-size: 32px;
+         line-height: 36px;
+         margin-bottom: 24px;
+         text-align: center;
+      }
+
+      &__input {
+         width: 330px;
+      }
+
+      &__form__btn {
+         width: 330px;
+         margin-top: 60px;
+         margin-left: -273px;
+         display: block;
+      }
+
+      &__btn {
+         width: 225px;
+         margin-top: 55px;
+         margin-left: 50px;
+      }
+   }
+
+
+}

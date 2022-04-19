@@ -1,0 +1,161 @@
+.about__container {
+   padding: 100px 164px;
+   background-color: $mirage-blue;
+   display: flex;
+
+   &__intro {
+      width: 445px;
+      margin-right: 131px;
+
+      &__title {
+         font-family: 'DM Serif Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 56px;
+         color: $link-white;
+         margin-bottom: 24px;
+      }
+
+      &__text {
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 28px;
+         color: $link-white;
+         margin-bottom: 32px;
+         opacity: 0.7;
+      }
+
+      &__link {
+         padding: 15px 32px;
+         font-weight: 700;
+         font-size: 15px;
+         line-height: 18px;
+         color: $link-white;
+         border: 1px solid $link-white;
+         box-sizing: border-box;
+         border-radius: 24px;
+         transition: 1s;
+
+         &:hover {
+            cursor: pointer;
+            transition: 1s;
+            opacity: 0.7;
+         }
+
+         &:active {
+            background-color: $link-white;
+            color: $mirage-blue;
+            transition: 0.2s;
+         }
+      }
+   }
+
+   &__teammates {
+      width: 600px;
+      height: 103px;
+      margin-top: 90px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      transition: 1s;
+
+      &__link:hover {
+         opacity: 0.5;
+         transition: 1s;
+      }
+
+      &__link:active {
+         cursor: progress;
+      }
+   }
+
+   @media only screen and (max-width:768px) {
+      height: 615px;
+      padding: 88px 116px;
+      flex-direction: column-reverse;
+      text-align: center;
+      background-image: url(/img/768px-about-bgck.png);
+      background-repeat: no-repeat;
+      background-position: top left 25px;
+
+
+      &__intro__title {
+         width: 457px;
+         margin-left: 40px;
+         font-size: 48px;
+         line-height: 56px;
+      }
+
+      &__intro__text {
+         width: 456px;
+         font-size: 15px;
+         line-height: 28px;
+         opacity: 0.7;
+         margin-left: 36px;
+      }
+
+      &__intro__link {
+         margin-left: 90px;
+      }
+
+      &__teammates {
+         width: 536px;
+         margin-bottom: 64px;
+
+         &__link {
+            margin: 20px;
+         }
+      }
+   }
+
+   @media only screen and (max-width:375px) {
+      width: 400px;
+      padding: 80px 24px;
+      padding-top: 50px;
+      flex-direction: column-reverse;
+      align-items: center;
+      background-image: url(/img/375px-bgck-about.png);
+      background-repeat: no-repeat;
+      background-position: top left 10px;
+      position: relative;
+      z-index: 1;
+
+      &__teammates {
+         width: 360px;
+         top: -50px;
+         position: absolute;
+         z-index: 1;
+      }
+
+      &__intro {
+
+
+         &__title {
+            position: absolute;
+            z-index: 1;
+            top: 270px;
+            font-size: 32px;
+            line-height: 36px;
+         }
+
+         &__link {
+            margin-left: 125px;
+            position: absolute;
+            z-index: 1;
+            top: 540px;
+            left: -1px;
+         }
+
+         &__text {
+            position: absolute;
+            top: 350px;
+            width: 327px;
+            margin-left: 105px;
+            font-size: 15px;
+            line-height: 28px;
+         }
+      }
+   }
+
+}

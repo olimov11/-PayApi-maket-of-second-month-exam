@@ -1,0 +1,115 @@
+.simple__container {
+   display: flex;
+   position: relative;
+   z-index: 1;
+   margin-bottom: 375px;
+   padding: 0 160px;
+
+   &__content {
+      width: 445px;
+      // margin-left: 12px;
+   }
+
+   &__title {
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      color: $san-blue;
+      margin-bottom: 24px;
+      margin-top: 240px;
+   }
+
+
+
+   &__text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $light-san-blue;
+   }
+
+   &__img {
+      position: absolute;
+      z-index: 2;
+      left: 600px;
+   }
+
+   &__img-bgck {
+      position: absolute;
+      z-index: 1;
+      top: -70px;
+      left: 1010px;
+   }
+
+   @media only screen and (max-width:768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-left: 23px;
+      padding-right: 23px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      background-image: url(/img/768px-bgck-simple.png);
+      background-repeat: no-repeat;
+      background-position: top -55px left 150px;
+
+      &__title {
+         margin-top: 370px;
+      }
+
+      &__text {
+         margin-left: -80px;
+         width: 573px;
+         font-size: 15px;
+         line-height: 28px;
+      }
+
+
+
+      &__img {
+         display: none;
+      }
+
+      &__img-bgck {
+         display: none;
+      }
+   }
+
+   @media only screen and (max-width:375px) {
+      flex-direction: column;
+      background-image: url(/img/375px-simple-bgck.svg);
+      background-repeat: no-repeat;
+      background-position: top left 27px;
+
+      &__title {
+         font-weight: 400;
+         font-size: 36px;
+         line-height: 40px;
+         text-align: center;
+      }
+
+      &__text {
+         width: 328px;
+         font-size: 15px;
+         line-height: 28px;
+         text-align: center;
+         margin-left: 70px;
+      }
+
+      &__img {
+         display: none;
+      }
+
+      &__img-bgck {
+         display: none;
+      }
+
+
+
+
+
+   }
+
+}

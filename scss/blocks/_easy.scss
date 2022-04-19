@@ -1,0 +1,89 @@
+.easy__container {
+   padding-left: 145px;
+   padding-top: 150px;
+   padding-right: 145px;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   display: flex;
+
+   &__img {
+      margin-right: 125px;
+      margin-left: -20px;
+   }
+
+   &__content {
+      width: 445px;
+      margin-top: 60px;
+
+   }
+
+   &__title {
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      color: $san-blue;
+      margin-bottom: 24px;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $light-san-blue;
+   }
+
+   @media only screen and (max-width:768px) {
+      padding: 100px 98px;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+
+      &__img {
+         width: 391px;
+         height: 250px;
+         margin-top: -50px;
+         margin-left: 100px;
+      }
+
+      &__title {
+         margin-top: -80px;
+         width: 573px;
+         margin-left: 10px;
+      }
+
+      &__text {
+         width: 573px;
+         text-align: center;
+         margin-left: -80px;
+      }
+   }
+
+   @media only screen and (max-width:375px) {
+      padding-left: 24px;
+      padding-right: 24px;
+
+      &__img {
+         margin-left: 180px;
+         width: 328px;
+         height: 209px;
+         text-align: center;
+      }
+
+      &__title {
+         width: 327px;
+         font-size: 25px;
+         line-height: 30px;
+         margin-left: 130px;
+      }
+
+      &__text {
+         width: 328px;
+         font-size: 15px;
+         line-height: 28px;
+         text-align: center;
+         margin-left: 80px;
+      }
+   }
+}
